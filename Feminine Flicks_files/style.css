@@ -123,6 +123,6 @@ nav button{
     object-fit: cover;
 }
 
-.image-gallery img:hover {
+.image-gallery:hover {
     opacity: 0.8;
 }

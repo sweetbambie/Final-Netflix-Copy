@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charsest="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminine Flicks</title>
+    <link rel="stylesheet" href="./Feminine Flicks_files/style.css">
+    <link rel="icon" type="image" href="http://127.0.0.1:5500/R.png">
+    
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row{
+            display:flex;
+        }
+
+        .column {
+            
+            flex: 33.33%;
+            padding: 5px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="./Feminine Flicks_files/transparentLogo.png" class="logo">
+            <div>
+                <button class="language-btn">English</button>
+                <button>Sign In</button>
+                <button>Sign Out</button>
+
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Nitche Feminine Movies, Shows, and more.</h1>
+            <h3>Watch anytime and anywhere.</h3>
+            <p>Ready to watch? Type in your email to create your account.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" required="">
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>  
+
+    <div class="image-gallery">
+        <img src="./Feminine Flicks_files/PoolSidePoster.png" alt="Poster1">
+        <img src="./Feminine Flicks_files/i_believe_in_unicorns.jpg.webp" alt="Poster2">
+        <img src="./Feminine Flicks_files/Buffalo66Poster.jpeg" alt="Poster3">
+        <img src="./Feminine Flicks_files/Valerie.jpeg" alt="Poster4">
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<footer>
+    <div class="footer">
+        <p>Author: Sophia Miao<br>
+        <a href="mailto:sophia@miao.fm">sophia@miao.fm</a></p>
+    </div>
+</footer>
+
+
+</body></html>
